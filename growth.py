@@ -88,7 +88,7 @@ if st.button(f"Convert {file.name}"):
     buffer.seek(0)
 
     st.download_button(
-        label=f"Download {file.name} as {conversion_type}"
+        label=f"Download {file.name} as {conversion_type}",
         data=buffer,
         file_name=file_name,
         mime=mime_type
