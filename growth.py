@@ -42,10 +42,10 @@ if uploaded_files:
         st.write("Preview the head of the Dataframe ")
         st.dataframe(df.head())
 
-#data cleaning options
-st.subheader("Data Cleaning options")
-if st.checkbox(f"clean data for {file.name}"):
-    col1, col2 =st.columns(2)
+         #data cleaning options
+        st.subheader("Data Cleaning options")
+        if st.checkbox(f"clean data for {file.name}"):
+         col1, col2 =st.columns(2)
 
     with col1:
         if st.button(f"Remove duplicates from the file : {file.name}"):
